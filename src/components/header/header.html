@@ -1,172 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <title>example</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        :root{
-            --top-header-height: 48px;
-            --top-header-bgc: #505050;
-            --top-header-text-color: #fff;
-
-            --top-header-title-text-size: 24px;
-            --top-header-title-text-weight: 200;
-            --top-header-title-marginleft: 16px;
-
-            --top-header-tocbutton-text-size: 16px;
-            --top-header-tocbutton-arrow-size: calc(0.5 * var(--top-header-tocbutton-text-size));
-
-            --top-header-menubutton-text-size: 16px;
-        }
-
-        #tocCheck, #menuCheck {
-            display: none;
-        }
-
-        #topHeader {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            width: 100%;
-            height: var(--top-header-height);
-            position: sticky;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--top-header-bgc);
-            color: var(--top-header-text-color);
-        }
-
-        #topHeader > h1 {
-            display: inline-block;
-            width: fit-content;
-            height: fit-content;
-            margin: auto auto auto var(--top-header-title-marginleft);
-            font-size: var(--top-header-title-text-size);
-            font-weight: var(--top-header-title-text-weight);
-        }
-
-        #opButtons {
-            display: flex;
-            flex-direction: row;
-            width: fit-content;
-            height: 100%;
-            margin: 0px;
-        }
-
-        #tocButton {
-            display: flex;
-            width: 64px;
-            position: relative;
-            margin: 0px;
-            cursor: pointer;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #tocButton > span {
-            display: inline-block;
-            padding-right: calc(2 * var(--top-header-tocbutton-arrow-size));
-            position: relative;
-            font-size: var(--top-header-tocbutton-text-size);
-            text-align: center;
-        }
-
-        #tocButton > span::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: var(--top-header-tocbutton-arrow-size);
-            height: var(--top-header-tocbutton-arrow-size);
-            border-top: var(--top-header-text-color) 2px solid;
-            border-right: var(--top-header-text-color) 2px solid;
-            transform-origin: bottom left;
-            transform: translateY(calc(-1.5 * var(--top-header-tocbutton-arrow-size) - 4px)) rotate(135deg);
-        }
-
-        #tocCheck:checked ~ #topHeader #tocButton > span::after {
-            transform: translateY(calc(0.5 * var(--top-header-tocbutton-arrow-size))) rotate(-45deg);
-        }
-
-        #menuButton,
-        #menuButton > span {
-            display: inline-block;
-            transition: all .4s;
-            box-sizing: border-box;
-        }
-
-        #menuButton {
-            position: relative;
-            width: 50px;
-            height: 44px;
-            background: none;
-            border: none;
-            appearance: none;
-            cursor: pointer;
-            margin-block: auto;
-        }
-
-        #menuButton > span {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            border-radius: 4px;
-        }
-
-        #menuButton > span:nth-of-type(1) {
-            height: 4px;
-            top: 0;
-            background-color: var(--top-header-text-color);
-        }
-        #menuButton > span:nth-of-type(2) {
-            display: inline-block;
-            width: 100%;
-            height: fit-content;
-            inset: 0;
-            margin: auto;
-            color: var(--top-header-text-color);
-        }
-        #menuButton > span:nth-of-type(3) {
-            height: 4px;
-            bottom: 0;
-            background-color: var(--top-header-text-color);
-        }
-
-        #menuCheck:checked ~ #topHeader #menuButton span:nth-of-type(1) {
-            transform: translateY(20px) rotate(-45deg);
-        }
-        #menuCheck:checked ~ #topHeader #menuButton span:nth-of-type(2) {
-            opacity: 0;
-        }
-        #menuCheck:checked ~ #topHeader #menuButton span:nth-of-type(3) {
-            transform: translateY(-20px) rotate(45deg);
-        }
-    </style>
+    <head>
+        <title>example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="header.css">
+    </head>
     <body>
-        <input type="checkbox" id="tocCheck">
-        <input type="checkbox" id="menuCheck">
         <header id="topHeader">
             <h1>群馬高専　電算部</h1>
             <div id="opButtons">
-                <label id="tocButton" for="tocCheck">
+                <button id="tocButton">
                     <span>
                         <span>目次</span>
                     </span>
-                </label>
-                <label class="menu-trigger" id="menuButton" for="menuCheck">
+                </button>
+                <button class="menu-trigger" id="menuButton">
                     <span></span>
                     <span>menu</span>
                     <span></span>
-                </label>
+                </button>
             </div>
         </header>
+        <script src="header.js" type="module"></script>
     </body>
 </html>
