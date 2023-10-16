@@ -1,51 +1,16 @@
-body{
-    background-color:#000;
-    font-family: "Open Sans", sans-serif;
-  }
-  section{
+section{
     padding:0px 16px;
     gap:16px;
     width:100%;
-  }
-  h1{
+}
+h1{
     font-size:24px;
-    text-align: center;
     color:#fff;
     width:100%;
-  }
-  .section-content{
-    color:#fff;
-    padding-left:16px;
-    font-size:16px;
-    width:100%;
-  }
-  div{
-    width:100%;
-    background-color:#888;
-    border-radius: 10px;
-    padding:4px 16px;
-    gap:8px;
-  }
-  .date{
-    color:#fff;
-    width:100%;
-    font-size:16px;
-    text-align: center;
-  }
-  h2{
-    color:#fff;
-    width:100%;
-    font-size:24px; 
-  }
-  .card-content{
-    width:100%;
-    font-size:16px;
+}
+.section-content{
     color:#fff;
     padding-left:16px;
-    white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  }
-  a{
-    text-decoration: none;
-  }
+    font-size:16px;
+    width:100%;
+}
