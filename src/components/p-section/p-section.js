@@ -1,4 +1,4 @@
-fetch("/src/components/section/section.html")
+fetch("/src/components/p-section/p-section.html")
     .then((stream) => stream.text())
     .then((text) => define(text));
 
