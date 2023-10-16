@@ -1,0 +1,12 @@
+・班名
+    ゲーム開発班
+・活動の概要
+    週一回の部室での開発、行事に向けたゲーム開発
+・制作物
+    カードゲーム
+    https://www.dropbox.com/scl/fi/xzuukf5ebqhdy263egsk0/2023BunpatuGame_Builded_Ver1_2.zip?rlkey=vwls34ydehheh31ro4mhuemb1&dl=0)
+    工華祭で展示するランゲーム(未完成)
+・班長より
+    ・全員高専に入ってから勉強を始めたこと
+    ・やさしく教えるので気軽に入って欲しいこと
+    ・Unityを使って開発しているが、UEを使える人も参加してほしいこと
