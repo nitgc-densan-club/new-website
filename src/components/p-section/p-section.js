@@ -1,8 +1,8 @@
 fetch("/src/components/p-section/p-section.html")
     .then((stream) => stream.text())
-    .then((text) => define(text));
+    .then((text) => define_Section(text));
 
-function define(text){
+function define_Section(text){
     const template = new DOMParser().parseFromString(text,"text/html").querySelector("template");
 
     class Section extends HTMLElement {
