@@ -6,12 +6,19 @@
     width: 50%;
     min-width: 130px;
     max-width: 300px;
+    --toc-vertical-padding: 5px;
+    --toc-gap-title-list: 10px;
+    --toc-title-text-size: 16px;
+    --toc-list-horizontal-padding: 10px;
+    --toc-list-gap: 5px;
+    --toc-list-item-height: 30px;
+    --toc-text-color: #fff;
 }
 #toc{
     font-family: 'Open Sans';
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: var(--toc-vertical-padding);
+    padding-bottom: var(--toc-vertical-padding);
 }
 .acd-check{
     display: none;
@@ -23,29 +30,29 @@
     line-height: 49px;
     width: 64px;
     height: 49px;
-    font-size: 16px;
+    font-size: var(--toc-title-text-size);
 }
 .acd-content{
-    color: #fff;
+    color: var(--toc-text-color);
     text-align: center;
     font-size: 14px;
     list-style-type: disc;
     height: 0;
     width: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-top: var(--toc-vertical-padding);
+    padding-bottom: var(--toc-vertical-padding);
+    padding-right: var(--toc-list-horizontal-padding);
+    padding-left: var(--toc-list-horizontal-padding);
     transition: 0.8s;
     visibility: hidden;
 }
 .acd-content.active{
-    background-color: #696969;
+    /* background-color: #696969; */
     height: auto;
     width: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-top: var(--toc-vertical-padding);
+    padding-bottom: var(--toc-vertical-padding);
+    padding-right: var(--toc-list-horizontal-padding);
+    padding-left: var(--toc-list-horizontal-padding);
     visibility: visible;
 }
