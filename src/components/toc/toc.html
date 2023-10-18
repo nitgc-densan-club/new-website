@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<body>
-    <input id="acd-check" class="acd-check" type="checkbox">
-    <label class="acd-label" for="acd-check">目次↓</label>
-    <div class="acd-content">
-        <p>目次</p>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-    </div>
-</body>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base target="_top">
+        <script src="/src/components/header/header.js"></script>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="/src/style/sanitize.css">
+            <link rel="stylesheet" href="/src/style/global.css">
+            <link rel="stylesheet" href="/src/components/toc/toc.css">
+
+            <div id="toc">
+                <div class="acd-content">
+                    <p>目次</p>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                </div>
+            </div>
+        </template>
+        <div>
+            <top-header id="topHeader"></top-header>
+            <toc-menu id="toc"></toc-menu>
+        </div>
+        <script src="toc.js"></script>
+    </body>
+</html>
