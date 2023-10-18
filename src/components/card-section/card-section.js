@@ -1,11 +1,11 @@
-fetch("/src/components/p-section/p-section.html")
+fetch("/src/components/card-section/card-section.html")
     .then((stream) => stream.text())
-    .then((text) => define_Section(text));
+    .then((text) => define_Card_Section(text));
 
-function define_Section(text){
+function define_Card_Section(text){
     const template = new DOMParser().parseFromString(text,"text/html").querySelector("template");
 
-    class Section extends HTMLElement {
+    class CardSection extends HTMLElement {
         constructor(){
             super();
             const shadow = this.attachShadow({mode:"open"});
@@ -14,5 +14,5 @@ function define_Section(text){
         connectedCallback(){}
     }
 
-    customElements.define("p-section",Section);
+    customElements.define("card-section",CardSection);
 }

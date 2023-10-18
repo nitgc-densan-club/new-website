@@ -1,0 +1,15 @@
+section{
+    padding:0px 16px;
+    gap:16px;
+    width:100%;
+}
+h1{
+    font-size:24px;
+    color:#fff;
+    width:100%;
+}
+#cardArray{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

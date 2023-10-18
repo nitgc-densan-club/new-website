@@ -1,8 +1,8 @@
 fetch("/src/components/header/header.html")
     .then((stream) => stream.text())
-    .then((text) => define(text));
+    .then((text) => define_Top_Header(text));
 
-function define(text){
+function define_Top_Header(text){
     const template = new DOMParser().parseFromString(text,"text/html").querySelector("template");
 
     class TopHeader extends HTMLElement {
