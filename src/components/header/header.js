@@ -16,7 +16,7 @@ function define_Top_Header(text){
             const tocButton = shadow.getElementById("tocButton");
             tocButton?.addEventListener("click",()=>{
                 tocButton.classList.toggle("active");
-                document.body.classList.toggle("toc-active");
+                document.getElementById("toc")?.classList.toggle("active");
             });
             //console.log(tocButton);
 
