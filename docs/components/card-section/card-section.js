@@ -1,4 +1,4 @@
-fetch("/src/components/card-section/card-section.html")
+fetch("https://slerk3357.github.io/new-website/components/card-section/card-section.html")
     .then((stream) => stream.text())
     .then((text) => define_Card_Section(text));
 
