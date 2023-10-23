@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="./style/global.css">
         <link rel="stylesheet" href="./style/index.css">
         <script src="./components/header/header.js"></script>
+        <script src="./components/p-section/p-section.js"></script>
+        <script src="./components/toc/toc.js"></script>
     </head>
     <body>
         <!-- 目次ボタン、メニューボタンのinput要素 -->
@@ -16,12 +18,13 @@
             <div id="main">
                 <top-header id="topHeader"></top-header>
                 <main>
-                    <!-- メインコンテンツ(index.html用)の中身 -->
+                    <p-section>
+                        <span slot="title">はじめに</span>
+                        <span slot="content">これはお試しに作成しました。</span>
+                    </p-section>
                 </main>
             </div>
-            <div id="toc">
-                <!-- 目次(index.html用)の中身 -->
-            </div>
+            <toc-element id="toc"></toc-element>
             <div id="menu">
                 <!-- メニューの中身 -->
             </div>
