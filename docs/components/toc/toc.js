@@ -22,5 +22,5 @@ function define_Toc(text){
         }
     }
 
-    customElements.define("toc-menu",Toc);
+    customElements.define("toc-element",Toc);
 }
