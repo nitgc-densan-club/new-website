@@ -1,4 +1,4 @@
-fetch("https://slerk3357.github.io/new-website/components/card/card.html")
+fetch("https://nitgc-densan-club.github.io/new-website/components/card/card.html")
     .then((stream) => stream.text())
     .then((text) => define_Card(text));
 
