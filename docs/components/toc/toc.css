@@ -27,7 +27,9 @@
 }
 .acd-label{
     display: block;
-    /* background-color: #d3d3d; */
+    /* background-color: #d3d3d;  */
+    position: relative;
+    z-index: 20;
     text-align: center;
     line-height: 49px;
     width: 64px;
@@ -40,22 +42,22 @@
     text-align: center;
     font-size: 14px;
     list-style-type: disc;
-    height: 0;
+    height: fit-content;
     width: 100px;
     padding-top: var(--toc-vertical-padding);
     padding-bottom: var(--toc-vertical-padding);
     padding-right: var(--toc-list-horizontal-padding);
     padding-left: var(--toc-list-horizontal-padding);
-    transition: 0.8s;
-    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 1s all;
 }
 .acd-content.active{
-    /* background-color: #696969; */
-    height: auto;
-    width: 100px;
+    background-color: #696969; 
     padding-top: var(--toc-vertical-padding);
     padding-bottom: var(--toc-vertical-padding);
     padding-right: var(--toc-list-horizontal-padding);
     padding-left: var(--toc-list-horizontal-padding);
-    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
