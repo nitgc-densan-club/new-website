@@ -3,9 +3,11 @@
     padding: 0;
 }
 :host{
+    display: block;
     width: 50%;
     min-width: 130px;
     max-width: 300px;
+    --toc-bgc: #707070;
     --toc-vertical-padding: 5px;
     --toc-gap-title-list: 10px;
     --toc-title-text-size: 16px;
@@ -33,6 +35,7 @@
     font-size: var(--toc-title-text-size);
 }
 .acd-content{
+    background-color: var(--toc-bgc);
     color: var(--toc-text-color);
     text-align: center;
     font-size: 14px;
