@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base target="_top">
+        <style>
+            body {
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="https://nitgc-densan-club.github.io/new-website/style/sanitize.css">
+            <link rel="stylesheet" href="https://nitgc-densan-club.github.io/new-website/style/global.css">
+            <link rel="stylesheet" href="./page-header.css">
+
+            <a id="anchor">
+                <div>
+                    <h2 class="title">
+                        <slot name="title">title</slot>
+                    </h2>
+                    <p class="date">
+                        <slot name="date">yyyy/mm/dd</slot>
+                    </p>
+                    
+                    <p class="content">
+                        <slot name="content">content</slot>
+                    </p>
+                    
+                </div>
+            </a>
+        </template>
+        <page-header href="">
+            <span slot="title">title</span>
+            <span slot="date">2023/10/25</span>
+            <span slot="content">content</span>
+        </page-header>
+        
+        <script src="./page-header.js"></script>
+    </body>
+</html>
