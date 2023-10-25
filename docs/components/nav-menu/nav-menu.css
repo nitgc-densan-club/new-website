@@ -1,4 +1,4 @@
-div {
+#menu {
     width:100%;
     height:calc(100dvh - var(--top-header-height));
     background-color:rgba(0,0,0,0.8);
@@ -11,7 +11,7 @@ div {
     opacity:0;
 }
 
-div.active{
+#menu.active{
     opacity:1;
 }
 
