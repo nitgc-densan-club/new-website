@@ -1,0 +1,41 @@
+:host{
+    --page-header-gap-ele:8px;
+    --page-header-date-text-size:16px;
+    --page-header-title-text-size:24px;
+    --page-header-text-color:#fff;
+    --page-header-content-text-size:16px;
+    --page-header-content-marginleft:16px;
+    --page-header-vertical-padding:4px;
+    --page-header-horizontal-padding:16px;
+    --page-header-border-radius:12px;
+}
+
+div{
+    width:100%;
+    background-color:#000;
+    border-radius: var(--page-header-border-radius);
+    padding:var(--page-header-vertical-padding) var(--page-header-horizontal-padding);
+    gap:var(--page-header-gap-ele);
+}
+.date{
+    color:#fff;
+    width:100%;
+    font-size:var(--page-header-date-text-size);
+}
+h2{
+    color:var(--page-header-text-color);
+    width:100%;
+    font-size:var(--page-header-title-text-size); 
+}
+.content{
+    width:100%;
+    font-size:var(--page-header-content-text-size);
+    color:var(--page-header-text-color);
+    padding-left:var(--page-header-content-marginleft);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#anchor{
+    text-decoration: none;
+}
