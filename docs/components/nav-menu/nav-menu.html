@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <base target="_top">
-  </head>
-  <body>
-    
-      
-    <div id>
-      
-      <menu>
-        <ul>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base target="_top">
+        <style>
+            body {
+                --top-header-height:48px;
+                height: 300dvh;
+            }
+        </style>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="https://nitgc-densan-club.github.io/new-website/style/sanitize.css">
+            <link rel="stylesheet" href="https://nitgc-densan-club.github.io/new-website/style/global.css">
+            <link rel="stylesheet" href="https://nitgc-densan-club.github.io/new-website/components/nav-menu/nav-menu.css">
 
-      <a href=><span> Home </span> </a> 
-        </ul>
-        <ul>
-      <a href=><span> About </span></a>  
-        </ul>
-        <ul>
-         <a href=><span> Product </span> </a>
-        </ul>
-        <ul>
-   <a href=> <span> News </span></a> 
-        </ul>
-        <ul>
-     <a href=> <span> Policy </span> </a> 
-      </ul>
-       </menu>
-      </div>
-
-  </body>
+            <div id>
+                <menu>
+                    <li>
+                        <a href=>
+                            <span> Home </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=>
+                            <span> About </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=>
+                            <span> Product </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=>
+                            <span> News </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=>
+                            <span> Topic </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=>
+                            <span> Policy </span>
+                        </a>
+                    </li>
+                </menu>
+            </div>
+        </template>
+        <nav-menu></nav-menu>
+        <script src="./nav-menu.js"></script>
+    </body>
 </html>
