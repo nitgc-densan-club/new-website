@@ -19,7 +19,7 @@ div{
     gap:var(--card-gap-ele);
 }
 .date{
-    color:#fff;
+    color:var(--card-text-color);
     width:100%;
     font-size:var(--card-date-text-size);
 }
@@ -36,6 +36,7 @@ h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
 }
 #anchor{
     text-decoration: none;

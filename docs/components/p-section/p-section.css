@@ -6,7 +6,6 @@
     --section-text-color:#fff;
     --section-text-color:#fff;
     --section-horizontal-padding:16px;
-
 }
 section{
     padding:0px  var(--section-horizontal-padding);
