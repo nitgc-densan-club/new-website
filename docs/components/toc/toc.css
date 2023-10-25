@@ -53,11 +53,6 @@
     transition: 1s all;
 }
 .acd-content.active{
-    background-color: #696969; 
-    padding-top: var(--toc-vertical-padding);
-    padding-bottom: var(--toc-vertical-padding);
-    padding-right: var(--toc-list-horizontal-padding);
-    padding-left: var(--toc-list-horizontal-padding);
     opacity: 1;
     transform: translateY(0);
 }
