@@ -1,4 +1,4 @@
-fetch("/src/components/header/header.html")
+fetch("https://nitgc-densan-club.github.io/new-website/components/header/header.html")
     .then((stream) => stream.text())
     .then((text) => define_Top_Header(text));
 

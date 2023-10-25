@@ -1,11 +1,11 @@
-fetch("/src/components/card-section/card-section.html")
+fetch("https://nitgc-densan-club.github.io/new-website/components/p-section/p-section.html")
     .then((stream) => stream.text())
-    .then((text) => define_Card_Section(text));
+    .then((text) => define_Section(text));
 
-function define_Card_Section(text){
+function define_Section(text){
     const template = new DOMParser().parseFromString(text,"text/html").querySelector("template");
 
-    class CardSection extends HTMLElement {
+    class Section extends HTMLElement {
         constructor(){
             super();
             const shadow = this.attachShadow({mode:"open"});
@@ -14,5 +14,5 @@ function define_Card_Section(text){
         connectedCallback(){}
     }
 
-    customElements.define("card-section",CardSection);
+    customElements.define("p-section",Section);
 }

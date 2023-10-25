@@ -1,4 +1,4 @@
-fetch("/src/components/toc/toc.html")
+fetch("https://nitgc-densan-club.github.io/new-website/components/toc/toc.html")
     .then((stream) => stream.text())
     .then((text) => define_Toc(text));
 
@@ -22,5 +22,5 @@ function define_Toc(text){
         }
     }
 
-    customElements.define("toc-menu",Toc);
+    customElements.define("toc-element",Toc);
 }
