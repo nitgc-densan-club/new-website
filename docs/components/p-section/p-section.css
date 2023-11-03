@@ -23,4 +23,5 @@ h1{
     ;
     font-size:var(--section-content-text-size);
     width:100%;
+    line-height: 1.8em;
 }

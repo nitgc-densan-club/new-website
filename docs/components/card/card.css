@@ -32,10 +32,14 @@ h2{
     font-size:var(--card-content-text-size);
     color:var(--card-text-color);
     padding-left:var(--card-content-marginleft);
-    white-space: nowrap;
+    line-height: 1.8em;
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 #anchor{
     text-decoration: none;
