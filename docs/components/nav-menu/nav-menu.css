@@ -1,3 +1,10 @@
+:host {
+    pointer-events: none;
+}
+:host(.active) {
+    pointer-events: auto;
+}
+
 #menu.not-loaded {
     transition: none;
 }
@@ -13,12 +20,10 @@
     bottom:0;
     transition:opacity 0.4s ease;
     opacity:0;
-    pointer-events: none;
 }
 
 #menu.active{
     opacity:1;
-    pointer-events: auto;
 }
 
 menu{

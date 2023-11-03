@@ -4,6 +4,7 @@
 }
 :host{
     display: block;
+    pointer-events: none;
     --toc-bgc: #707070;
     --toc-vertical-padding: 5px;
     --toc-gap-title-list: 10px;
@@ -14,11 +15,13 @@
     --toc-list-item-height: 30px;
     --toc-text-color: #fff;
 }
+:host(.active) {
+    pointer-events: auto;
+}
 #toc.not-loaded {
     transition: none;
 }
 #toc{
-    font-family: 'Open Sans';
     width: 100%;
     padding-top: var(--toc-vertical-padding);
     padding-bottom: var(--toc-vertical-padding);
@@ -28,12 +31,10 @@
     transform: translateY(-100%);
     transition: .4s ease;
     transition-property: opacity, transform;
-    pointer-events: none;
 }
 #toc.active {
     opacity: 1;
     transform: translateY(0);
-    pointer-events: auto;
 }
 
 #toc > span {

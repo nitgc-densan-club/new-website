@@ -24,6 +24,7 @@ h1.title{
     width:100%;
     margin: 0px;
     font-size:var(--page-header-title-text-size);
+    font-family: "Zen Maru Gothic", sans-serif;
 }
 .nontitle > h1.title {
     display: none;
