@@ -40,6 +40,10 @@
     font-weight: var(--top-header-title-text-weight);
 }
 
+#topHeader > h1 > a {
+    color: var(--top-header-text-color);
+}
+
 #opButtons {
     display: flex;
     flex-direction: row;
