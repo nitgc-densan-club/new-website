@@ -1,0 +1,16 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-item-section-gap);
+    background-color: var(--main-bgc);
+    min-height: 100dvh;
+}
+
+#toc {
+    width: 50%;
+    min-width: 130px;
+    max-width: 300px;
+    position: fixed;
+    top: var(--top-header-height);
+    right: 0;
+}
