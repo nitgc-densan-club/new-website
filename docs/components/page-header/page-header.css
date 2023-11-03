@@ -42,9 +42,7 @@ p.content{
     font-size:var(--page-header-content-text-size);
     color:var(--page-header-text-color);
     padding-left:var(--page-header-content-marginleft);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.8em;
 }
 .nondescribe > p.content {
     display: none;

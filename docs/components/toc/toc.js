@@ -12,12 +12,16 @@ function define_Toc(text){
             const shadow = this.attachShadow({mode:"open"});
             shadow.appendChild(template.content.cloneNode(true));
         }
-        connectedCallback(){}
+        connectedCallback(){
+            setTimeout(() => {
+                this.shadowRoot.getElementById("toc").classList.remove("not-loaded");
+            }, 400);
+        }
         attributeChangedCallback(name, oldValue, newValue) {
             if(newValue === "active"){
-                this.shadowRoot.querySelector("#toc > .acd-content").classList.add("active");
+                this.shadowRoot.getElementById("toc").classList.add("active");
             }else{
-                this.shadowRoot.querySelector("#toc > .acd-content").classList.remove("active");
+                this.shadowRoot.getElementById("toc").classList.remove("active");
             }
         }
     }

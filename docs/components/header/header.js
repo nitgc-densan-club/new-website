@@ -23,7 +23,7 @@ function define_Top_Header(text){
             const menuButton = shadow.getElementById("menuButton");
             menuButton?.addEventListener("click",()=>{
                 menuButton.classList.toggle("active");
-                document.body.classList.toggle("menu-active");
+                document.getElementById("menu")?.classList.toggle("active");
             });
             //console.log(menuButton);
         }

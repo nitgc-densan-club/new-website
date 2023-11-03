@@ -14,13 +14,18 @@ function define_PageHeader(text){
         }
         connectedCallback(){}
         attributeChangedCallback(name, oldValue, newValue) {
-            console.log(`${oldValue},${newValue}`);
+            if(oldValue !== null || newValue !== ""){
+                return;
+            }
             switch(name){
                 case "data-nontitle":
+                    this.shadowRoot.getElementById("container").classList.add("nontitle");
                     break;
                 case "data-nondate":
+                    this.shadowRoot.getElementById("container").classList.add("nondate");
                     break;
                 case "data-nondescribe":
+                    this.shadowRoot.getElementById("container").classList.add("nondescribe");
                     break;
             }
         }

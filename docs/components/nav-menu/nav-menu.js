@@ -12,7 +12,11 @@ function define_NavMenu(text){
             const shadow = this.attachShadow({mode:"open"});
             shadow.appendChild(template.content.cloneNode(true));
         }
-        connectedCallback(){}
+        connectedCallback(){
+            setTimeout(() => {
+                this.shadowRoot.getElementById("menu").classList.remove("not-loaded");
+            }, 400);
+        }
         attributeChangedCallback(name, oldValue, newValue) {
             if(newValue === "active"){
                 this.shadowRoot.getElementById("menu").classList.add("active");
