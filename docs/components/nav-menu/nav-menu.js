@@ -1,4 +1,4 @@
-fetch("https://nitgc-densan-club.github.io/new-website/components/nav-menu/nav-menu.html")
+fetch("https://nitgc-densan-club.github.io/components/nav-menu/nav-menu.html")
     .then((stream) => stream.text())
     .then((text) => define_NavMenu(text));
 

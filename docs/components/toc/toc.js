@@ -1,4 +1,4 @@
-fetch("https://nitgc-densan-club.github.io/new-website/components/toc/toc.html")
+fetch("https://nitgc-densan-club.github.io/components/toc/toc.html")
     .then((stream) => stream.text())
     .then((text) => define_Toc(text));
 
