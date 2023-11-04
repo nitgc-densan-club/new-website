@@ -1,4 +1,4 @@
-fetch("https://nitgc-densan-club.github.io/new-website/components/page-header/page-header.html")
+fetch("https://nitgc-densan-club.github.io/components/page-header/page-header.html")
     .then((stream) => stream.text())
     .then((text) => define_PageHeader(text));
 
