@@ -25,7 +25,7 @@ div{
 h2{
     color:var(--card-text-color);
     width:100%;
-    font-size:var(--card-title-text-size); 
+    font-size:var(--card-title-text-size);
 }
 .card-content{
     width:100%;

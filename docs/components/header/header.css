@@ -1,4 +1,8 @@
 :host{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     --top-header-height: 48px;
     --top-header-bgc: #505050;
     --top-header-text-color: #fff;
@@ -23,10 +27,6 @@
     flex-wrap: nowrap;
     width: 100%;
     height: var(--top-header-height);
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: var(--top-header-bgc);
     color: var(--top-header-text-color);
 }
