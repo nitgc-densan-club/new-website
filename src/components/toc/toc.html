@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base target="_top">
-        <script src="/src/components/header/header.js"></script>
+        <script src="../header/header.js"></script>
     </head>
     <body>
         <template>
@@ -15,11 +15,7 @@
             <div id="toc" class="not-loaded">
                 <span>目次</span>
                 <ol class="acd-content">
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                    <li>E</li>
+                    <slot name="toc-item"></slot>
                 </ol>
             </div>
         </template>
