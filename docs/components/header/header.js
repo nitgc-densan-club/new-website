@@ -24,6 +24,7 @@ function define_Top_Header(text){
             menuButton?.addEventListener("click",()=>{
                 menuButton.classList.toggle("active");
                 document.getElementById("menu")?.classList.toggle("active");
+                window.document.body.classList.toggle("active");
             });
             //console.log(menuButton);
         }
