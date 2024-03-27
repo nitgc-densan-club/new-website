@@ -1,8 +1,8 @@
-:host{
+:host {
     position: sticky;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100dvw;
     --top-header-height: 48px;
     --top-header-bgc: #505050;
     --top-header-text-color: #fff;
@@ -24,11 +24,12 @@
 #topHeader {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
-    height: var(--top-header-height);
+    min-height: var(--top-header-height);
     background-color: var(--top-header-bgc);
     color: var(--top-header-text-color);
+    padding-right: 20px;
 }
 
 #topHeader > h1 {
@@ -41,15 +42,20 @@
 }
 
 #topHeader > h1 > a {
+    display: flex;
+    flex-wrap: wrap;
     color: var(--top-header-text-color);
+}
+
+#topHeader > h1 > a > span{
+    display: inline-block;
 }
 
 #opButtons {
     display: flex;
     flex-direction: row;
     width: fit-content;
-    height: 100%;
-    margin: 0px;
+    margin: 0px 0px 0px auto;
 }
 
 #tocButton {
