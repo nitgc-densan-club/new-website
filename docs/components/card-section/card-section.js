@@ -1,4 +1,4 @@
-fetch("https://nitgc-densan-club.github.io/components/card-section/card-section.html")
+fetch("components/card-section/card-section.html")
     .then((stream) => stream.text())
     .then((text) => define_Card_Section(text));
 

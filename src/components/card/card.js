@@ -1,4 +1,4 @@
-fetch("/src/components/card/card.html")
+fetch("components/card/card.html")
     .then((stream) => stream.text())
     .then((text) => define_Card(text));
 

@@ -4,16 +4,16 @@
         <title>example</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <base target="_top">
+        <base href="http://127.0.0.1:5500/src/" target="_top">
     </head>
     <body>
         <template>
-            <link rel="stylesheet" href="/src/style/sanitize.css">
-            <link rel="stylesheet" href="/src/style/global.css">
-            <link rel="stylesheet" href="/src/components/header/header.css">
+            <link rel="stylesheet" href="style/sanitize.css">
+            <link rel="stylesheet" href="style/global.css">
+            <link rel="stylesheet" href="components/header/header.css">
 
             <header id="topHeader">
-                <h1><a href="/src/">
+                <h1><a href="./">
                     <span>群馬高専</span>
                     <span>　</span>
                     <span>電算部</span>
@@ -33,6 +33,6 @@
             </header>
         </template>
         <top-header></top-header>
-        <script src="./header.js"></script>
+        <script src="components/header/header.js"></script>
     </body>
 </html>

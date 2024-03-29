@@ -1,4 +1,4 @@
-fetch("/src/components/page-header/page-header.html")
+fetch("components/page-header/page-header.html")
     .then((stream) => stream.text())
     .then((text) => define_PageHeader(text));
 

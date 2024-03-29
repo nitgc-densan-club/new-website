@@ -1,4 +1,4 @@
-fetch("/src/components/nav-menu/nav-menu.html")
+fetch("components/nav-menu/nav-menu.html")
     .then((stream) => stream.text())
     .then((text) => define_NavMenu(text));
 
