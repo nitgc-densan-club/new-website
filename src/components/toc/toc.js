@@ -1,4 +1,4 @@
-fetch("/src/components/toc/toc.html")
+fetch("components/toc/toc.html")
     .then((stream) => stream.text())
     .then((text) => define_Toc(text));
 
